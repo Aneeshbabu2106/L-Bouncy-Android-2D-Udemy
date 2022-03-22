@@ -1,5 +1,5 @@
-using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,5 +19,10 @@ public class GameManager : MonoBehaviour
     {
         winText.SetActive(true);
         restartButton.SetActive(true);
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("Game");
     }
 }
